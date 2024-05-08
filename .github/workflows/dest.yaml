@@ -89,6 +89,9 @@ jobs:
         run: terraform plan -destroy -out=tfplan
         working-directory: ././
 
+      - name: Delay Before Destroy
+        run: sleep 30  # Adjust the delay time as needed
+
       - name: Terraform Apply
         if: steps.terraform.outputs.exit-code == 0
         run: terraform apply -auto-approve tfplan
