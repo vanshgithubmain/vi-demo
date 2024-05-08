@@ -35,11 +35,11 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: ./
+        working-directory: ././
 
       - name: Terraform Plan
         run: terraform plan -destroy
-        working-directory: ./
+        working-directory: ././
 
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
