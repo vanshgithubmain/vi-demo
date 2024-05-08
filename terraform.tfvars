@@ -1,6 +1,6 @@
 region="eu-west-2"
 
-bucket_name="vs1new"
+bucket_name="vs2new"
 
 tags={
     Name="vansh_bucket"
